@@ -1,0 +1,10 @@
+export { default as Posts } from './Posts';
+export {default as CreatePost} from './CreatePost';
+export {default as Login} from './Login';
+export { default as Register } from './Register';
+export {default as Profile} from './Profile';
+export {default as Home} from './Home';
+export{default as LoggedIn} from './LoggedIn';
+export {default as ViewPost} from './ViewPost';
+export {default as EditPost} from './EditPost';
+export {default as SearchBar} from './SearchBar';
