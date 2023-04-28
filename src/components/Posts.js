@@ -11,6 +11,7 @@ const Posts = ({ posts, token, setPosts }) => {
   if (!posts || posts.length == 0) {
     return <div>No posts to display</div>;
   }
+  
   return (
     <div className="posts-container">
         {console.log(token)}
