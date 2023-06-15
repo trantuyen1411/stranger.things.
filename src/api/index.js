@@ -21,6 +21,16 @@ export const getPosts = async (token) => {
 
 export const registerUser = async (username, password, token) => {
   try {
+    console.log("username: ", username)
+    console.log("password: ", password)
+    console.log("token: ", token)
+    console.log("body: ", JSON.stringify({
+      user: {
+        username: username,
+        password: password,
+      }
+    }))
+
     const response = await fetch(
       `${BASE_URL}/users/register`, {
       method: "POST",
@@ -31,11 +41,15 @@ export const registerUser = async (username, password, token) => {
       body: JSON.stringify({
         user: {
           username: username,
-          password: password
+          password: password,
         }
       })
     });
+    
     const result = await response.json();
+    
+
+
     console.log(result)
     return result
   } catch (err) {
